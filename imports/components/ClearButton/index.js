@@ -1,18 +1,11 @@
 import React from "react";
-import "./styles";
+import PropTypes from "prop-types";
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+const ClearButton = ({ removeCompleted }) => (
+  <button onClick={() => removeCompleted()}>Clear Completed</button>
+);
+ClearButton.propTypes = {
+  removeCompleted: PropTypes.func.isRequired
+};
 
-  render() {
-    return (
-      <div>
-        <h1>To-Do List</h1>
-      </div>
-    );
-  }
-}
-
-export default App;
+export default ClearButton;
