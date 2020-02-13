@@ -1,18 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const ToDoItem = ({ todo, toggleComplete, removeToDo }) => {
+const ToDoItem = ({ todo, toggleComplete, removeTodo }) => {
   return (
     <li>
       {todo.title}
       <input
         type="checkbox"
-        id={todo.id}
+        id={todo._id}
         checked={todo.complete}
         onChange={toggleComplete}
       />
-      <label htmlFor={todo.id} />
-      <button onClick={removeToDo}>
+      <label htmlFor={todo._id} />
+      <button onClick={removeTodo}>
         <i className="fa fa-trash" />
       </button>
     </li>
@@ -21,7 +21,7 @@ const ToDoItem = ({ todo, toggleComplete, removeToDo }) => {
 
 ToDoItem.propTypes = {
   todo: PropTypes.shape({
-    id: PropTypes.number.isRequired,
+    _id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     complete: PropTypes.bool.isRequired
   }).isRequired

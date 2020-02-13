@@ -1,12 +1,9 @@
 /* Imported Fonts */
 /*-----------------------------------------*/
-
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic");
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
-
 /* CSS Reset */
 /*-----------------------------------------*/
-
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -99,7 +96,6 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -114,21 +110,17 @@ nav,
 section {
   display: block;
 }
-
 body {
   line-height: 1;
 }
-
 ol,
 ul {
   list-style: none;
 }
-
 blockquote,
 q {
   quotes: none;
 }
-
 blockquote:before,
 blockquote:after,
 q:before,
@@ -136,27 +128,21 @@ q:after {
   content: "";
   content: none;
 }
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 /* Global */
 /*-----------------------------------------*/
-
 * {
   box-sizing: border-box;
 }
-
 *:focus {
   outline: none;
 }
-
 html {
   font-size: 18px;
 }
-
 body,
 button,
 input {
@@ -165,7 +151,6 @@ input {
   font-size: 1rem;
   line-height: 1.5;
 }
-
 body {
   background-color: #2e2e2e;
 }
